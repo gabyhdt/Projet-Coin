@@ -1,0 +1,614 @@
+body{
+    margin: 0;
+}
+
+h3{
+	position: relative;
+	z-index:99;
+	margin-top : 30%;
+	text-align: center;
+	color: black;
+	font-family: "Tango Sans";
+	font-size: 25px;
+}
+
+.back{
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index: -100;
+    background-size: contain;
+    margin:0;
+}
+	
+#container div {
+	color: #222;
+	margin-top: 15vw;
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+#container div #desc,.desc {
+	color: white;
+	box-shadow: 1px 1px 10px grey;
+	padding: 6%;
+	border-radius: 15px;
+	background-image: linear-gradient(to left, PaleGreen 0%,MediumSeaGreen 50%, SeaGreen 100%);
+	margin-top: 15px;
+	font-size: 18px;
+	padding-top : 5vw;
+	text-align: justify;
+	
+}
+
+#container div h2 {
+	font-size: 32px;
+	font-family:"Tango Sans";
+	color: white;
+}
+
+#slogan {
+	z-index: 99;
+	margin-top : 210px;
+	margin-left: 18vw;
+}
+
+#slogan p {
+	color: transparent;
+	font-size: 0px;
+}
+
+
+#slogan span {
+	font-size: 30px;
+}
+
+#slogan p span {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+
+#slogan p span::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transform: translateX(-100%);
+}
+
+#slogan p:nth-child(1) {
+	animation: txt-appearance 0s 1s forwards;
+}
+
+#slogan p:nth-child(2) {
+	animation: txt-appearance 0s 1.25s forwards;
+}
+
+#slogan p:nth-child(1) span::after {
+	background: #3cb371;
+	animation: slide-in 0.75s ease-out forwards,
+	slide-out 0.75s 1s ease-out forwards;
+}
+
+#slogan p:nth-child(2) span::after {
+	background: #3cb371;
+	animation: slide-in 0.75s 0.3s ease-out forwards,
+	slide-out 0.75s 1.3s ease-out forwards;
+}
+
+@keyframes slide-in {
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes slide-out {
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes txt-appearance {
+	100% {
+		color: #3cb371;
+	}
+}
+
+#achat {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	color: #fff;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin-top: 10vw;
+}
+
+#achat p {
+	font-size: 26px;
+	color: #185b30;
+}
+
+#anim {
+	height: 50px;
+	overflow: hidden;
+}
+
+#anim > div > div {
+	height: 52px;
+	padding: 10px 10px;
+	margin-bottom: 35px;
+	display: inline-block;
+}
+
+#anim div:first-child {
+	animation: show 5s linear infinite;
+}
+
+#anim div div {
+	background: #185b30;
+}
+
+@keyframes show {
+	0% { margin-top: -270px }
+	5% { margin-top: -180px }
+	33% { margin-top: -180px }
+	38% { margin-top: -90px }
+	66% { margin-top: -90px }
+	71% { margin-top: 0px }
+	99.99% { margin-top: 0px }
+	100% { margin-top: -270px }
+}
+
+
+
+#nav{
+   
+	text-align: center;
+	margin-right: auto;
+	position: relative;
+}
+
+#logo{
+	float:left;
+	display: inline;
+}
+
+
+p{
+	font-family: "Tango Sans";
+	font-size: 16px;
+}
+
+header{
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    transition: all 0.25s;
+}
+
+a{
+    text-decoration: none;
+    color: #cecece;
+    font-family: "Tango Sans" ;
+	font-size: 25px;
+}
+
+.logo{
+    width: 130px;
+    height: auto;
+    position: relative;
+    top: 10px;
+
+	
+}
+
+nav li{
+    margin: 0;
+    display:  table-cell;
+    margin-right: 2%;
+	margin-left: auto; 
+}
+
+#nav li a{
+    font-size: 16px;
+    margin-right:10px;
+}
+
+a:hover{
+    color: MediumSeaGreen;
+	text-decoration: underline 3px;
+}
+
+form{
+    padding-left: 1%;
+}
+
+.bn{
+    border: none;
+    width: 190px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 35px;
+    font-weight: bold;
+    font-family: "Tango Sans";
+    background-image: linear-gradient(to right, palegreen 0%,mediumseagreen 50%);
+    color: white;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 1px 25px grey;
+}
+
+#contact{
+    position:fixed;
+    bottom:0;
+    right: 5px;
+    bottom:5px;
+
+    z-index:400;
+}
+
+
+.bn:hover{
+    transform: scale(0.89);
+    
+}
+
+.sticky{
+    box-shadow: 1px 1px 15px grey;
+}
+
+body {
+	margin:0;
+}
+
+
+.footer {
+	width: 100%;
+	z-index:200;
+	margin-top: 25%;
+	position: relative;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+.footer-div{
+    width: 100%;
+	z-index:200;
+	margin-top: 10%;
+	position: relative;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+.contenu-footer {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 10%;
+	display: inline;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 9%;
+	
+}
+
+.contenu-footer div{
+	background-image: linear-gradient(to left, PaleGreen 0%,MediumSeaGreen 50%, SeaGreen 100%);
+	border-radius: 20px;
+	box-shadow: 1px 1px 15px grey;
+	padding:2%;
+	margin: auto;
+	margin-bottom:2%;
+	margin-top:0;
+	width: 90%;
+}
+
+
+
+.bloc {
+	width: 25%;
+	margin: 0 30px;
+}
+
+.contenu-footer {
+	text-align: center;
+	margin-top:3%;
+}
+
+.contenu-footer p {
+	font-size: 16px;
+	font-family: "Tango Sans";
+	color: white;
+}
+
+.footer-propos h1,
+.footer-engagements h1,
+.footer-suiveznous h1,
+.footer-nouscontacter h1 {
+	font-size: 22px;
+	padding-bottom: 20px;	
+	font-family: "Tango Sans";
+	color: white;
+	text-decoration: 2px underline;
+}
+
+.footer-nouscontacter p {
+	padding: 5px 0;
+}
+
+.liste-propos li {
+	padding: 5px 0;
+}
+
+.liste-propos {
+	list-style-type: none;
+	padding: 2px 0;
+	
+}
+
+.liste-propos a {
+	text-decoration: none;
+	color: #333;
+	font-size: 16px;
+	color: white;
+}
+
+.liste-propos a:hover {
+	color: palegreen;
+}
+
+
+.footer-suiveznous img {
+	width: 20px;
+	height: 20px;
+}
+
+div.evenement {
+	margin: auto;
+	margin-top:90px;
+	color: white;
+}
+
+div.evenement div{
+	width:80%;
+	height:25vw;
+}
+
+div.evenement_1 {
+	
+	background-image: linear-gradient(to right, PaleGreen 0%,MediumSeaGreen 50%, SeaGreen 100%);
+	border-radius: 15px;
+    padding:2%;
+	margin: auto;
+	margin-bottom:12px;
+	transition: all 0.5s;
+}
+
+div.evenement_2 {
+	
+	background-image: linear-gradient(to right, PaleGreen 0%,MediumSeaGreen 50%, SeaGreen 100%);
+	border-radius: 15px;
+    padding:2%;
+	margin: auto;
+	margin-bottom:12px;
+	transition: all 0.5s;
+}
+
+div.evenement_3 {
+	
+	background-image: linear-gradient(to right, PaleGreen 0%,MediumSeaGreen 50%, SeaGreen 100%);
+	border-radius: 15px;
+    padding:2%;
+	margin: auto;
+	margin-bottom:12px;
+	transition: all 0.5s;
+}
+
+div.evenement_4 {
+	
+	background-image: linear-gradient(to right, PaleGreen 0%,MediumSeaGreen 50%, SeaGreen 100%);
+	border-radius: 15px;
+	margin:auto;
+    padding:2%;
+	margin-bottom:12px;
+	transition: all 0.5s;
+	margin-bottom:2%;
+}
+
+div .evenement_1:hover {
+	background-color: mediumseagreen;
+	transform:scale(1.1);
+	box-shadow: 1px 1px 15px mediumseagreen;
+	
+}
+
+div .evenement_2:hover {
+	background-color: mediumseagreen;
+	transform:scale(1.1);
+	box-shadow: 1px 1px 15px mediumseagreen;
+}
+
+div .evenement_3:hover {
+	background-color: mediumseagreen;
+	transform:scale(1.1);
+	box-shadow: 1px 1px 15px mediumseagreen;
+}
+
+div .evenement_4:hover {
+	background-color: mediumseagreen;
+	transform:scale(1.1);
+	box-shadow: 1px 1px 15px mediumseagreen;
+}
+
+div img.concert {
+	width: 20vw;
+	height: 20vw;
+	position: relative;
+	left: 5%;
+    top:10%;
+	border-radius: 15px;
+}
+
+div.texte p {
+	width: 70%;
+    text-align: justify;
+
+	position: relative;
+	z-index: 1;
+	left: 50%;
+	bottom: 90%;
+	font-size: 50%;
+}
+
+#contenu-form{
+	display: block;
+	width:90%;
+	margin-top:12%;
+	margin-bottom:0;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+#content-form{
+    content:"";
+    display: table;
+    clear:both;
+}
+
+.message{
+	resize: none;
+	width:95%;
+	height:20vw;
+	border-radius:5px;
+	border:solid 1px grey;
+	padding : 2%;
+	border-radius : 15px;
+}
+
+#bloc-nom + input{
+	width: 100%;
+}
+
+input#prenom{
+	width: 40%;
+}
+
+input#nom{
+	width: 40%;
+}
+
+
+#bloc-nom{
+	display : flex;
+
+}
+
+.message:focus{
+	outline: solid 1.4px white;
+}
+
+#mail{
+	width: 93%;
+	margin : 0;
+}
+
+#label-mail{
+	margin : 0;
+	height : 2%;
+}
+
+#checkbox{
+	display: flex;
+	width: 10%;;
+}
+
+#Gabriel, #Alicia{
+	height: 20px;
+	width: 20px;
+	text-decoration: none;
+}
+
+#envoyer{
+	height : 7vw;
+	width : 45%;
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+    font-size: 20px;
+    border-radius: 35px;
+    font-weight: bold;
+    font-family: "Tango Sans";
+    color: darkgrey;
+	background : white;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#envoyer:hover{
+    transform: scale(0.94);
+}
+
+.form{
+	position:relative;
+	margin-top: 45%;
+    margin-left: 0;
+	border:none;
+	box-shadow: 1px 1px 10px grey;
+	background-image: linear-gradient(to left, PaleGreen 0%,MediumSeaGreen 50%, SeaGreen 100%);
+	width:78%;
+	height:40vw;
+	border-radius: 12px;
+	display:grid;
+    padding-bottom:35%;
+	padding-top: 6%;
+	padding-left :11%;
+	padding-right : 11%;
+	font-family: "Tango Sans";
+	color:white;
+	margin-right: 0;
+}
+
+input:focus{
+	outline: solid 1.4px white;
+}
+
+input{
+	height:30%;
+	width: auto;
+	margin: 1%;
+	border-radius:15px;
+	border:solid 1px grey;
+	font-size: 15px;
+}
+
+label{
+	position: relative;
+    padding:3%;
+}
+
+iframe{
+	position:relative;
+	width:99%;
+    margin-left: 0;
+	height: 60vw;
+	margin-top: 5%;
+	border-radius:10px;
+	border:none;
+	box-shadow: 1px 1px 10px grey;
+}

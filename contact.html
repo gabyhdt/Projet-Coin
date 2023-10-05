@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" href="img/icon.png"> 
+        <title>Eventip</title>
+
+		
+    </head>
+    <body>
+        <header>
+        
+            <div id="nav">
+                <nav>
+					<div id="conteneur-nav">
+						<ul>
+								<li id="logo"><a  href ="index.html"> <img class="logo" src="img/logo2.png" alt="Logo" ></a></li>
+								<li><a  href="index.html">Accueil</a></li>
+								<li><a  href="concert.html">Concerts</a></li>
+								<li><a  href="Spectacle.html">Spectacles</a></li>
+								<li><a  href="expo.html">Expositions</a></li>
+								<li><form id="contact" action="contact.html" method="get"><button class="bn">Nous Contacter</button></form></li>
+						</ul>
+					</div>
+                </nav>
+            </div>
+        </header>
+        <script>
+        	window.addEventListener("scroll", function(){
+        		var nav = document.querySelector("header");
+        		nav.classList.toggle("sticky", window.scrollY > 0)
+        	})
+
+        </script>
+		<div id="contenu-form">
+		<form class="form">
+			<div id="content-form">
+				<div id="bloc-nom">
+					<label for="nom">Nom</label>
+					<input type="text" id="nom" placeholder="Dupont" required>
+					<label for="prenom">Prénom</label>
+					<input type="text" id="prenom" placeholder="Alex" required>
+				</div>
+				<label for="mail" id="label-mail">E-mail</label>
+				<input type="email" id="mail" placeholder="Alex.Dupont@gmail.com"  required>
+				<label>Qui voulez-vous conctacter ? </label>
+				<div id="checkbox">
+					<input type="checkbox" name="Alicia" id="Alicia">
+					<label for="Alicia">Alicia</label>
+					<input type="checkbox" name="Gabriel" id="Gabriel">
+					<label for="Gabriel">Gabriel</label>
+				</div>
+				<label for="msg">Décrivez votre problème</label>
+				<textarea class ="message" id="msg" placeholder="Écrivez nous"></textarea>
+				<input type="submit" id="envoyer" value="Envoyer">
+			</div>
+		</form>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5910.303726660115!2d2.170202023102435!3d48.71042964877475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67f538f1df01d%3A0xe5d2ea29a4e0ceb!2sUniversit%C3%A9%20Paris-Saclay%20-%20IUT%20d&#39;Orsay!5e0!3m2!1sfr!2sfr!4v1665782531863!5m2!1sfr!2sfr"  referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<img class="back" src="img/stacked-waves-haikei.svg" alt="fond">
+    
+	<footer class="footer">
+	
+		<div class="contenu-footer">
+		
+			<div class="bloc footer-propos">
+				<h1>À propos</h1>
+				<ul class="liste-propos">
+					<li><a href ="index.html">Qui sommes-nous ?</a></li>
+					<li><a href ="concert.html">Concert</a></li>
+					<li><a href ="Spectacle.html">Spectacle</a></li>
+					<li><a href ="expo.html">Exposition</a></li>
+					<li><a href ="Rapport.pdf">Notre Rapport</a></li>
+				</ul>
+			</div>
+			
+			<div class="bloc footer-engagements">
+				<h1>Nos engagements</h1>
+					<p>Vente et échange sécurisés</p>
+					<p>Contact 7j/7</p>
+					<p>Service client d'exception</p>
+			</div>
+			
+			<div class="bloc footer-suiveznous">
+				<h1>Suivez-nous</h1>
+				<p><img src="facebook.png" alt="facebook">  Facebook</p>
+				<p><img src="twitter.png" alt="twitter">  Twitter</p>
+				<p><img src="pinterest.png" alt="pinterest">  Pinterest</p>
+				<p><img src="instagram.png" alt="instagram">  Instagram</p>
+				<p><img src="youtube.png" alt="youtube">  Youtube</p>
+			</div>
+			
+			<div class="bloc footer-nouscontacter">
+				<h1>Nous contacter</h1>
+					<p>IUT d'Orsay, 91190 Gif-sur-Yvette</p>
+					<p>📧 eventip.ga@gmail.com</p>
+					<p>📞 07 68 56 92 68 </p>
+			</div>
+			
+			
+			
+		</div>
+	
+	</footer>
+	
+	</body>
+</html>

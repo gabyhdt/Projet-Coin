@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" href="img/icon.png"> 
+        <title>Eventip</title>
+
+		
+    </head>
+    <body>
+		<header>
+        
+            <div id="nav">
+                <nav>
+					<div id="conteneur-nav">
+						<ul>
+								<li id="logo"><a  href ="index.html"> <img class="logo" src="img/logo2.png" alt="Logo" ></a></li>
+								<li><a  href="index.html">Accueil</a></li>
+								<li><a  href="concert.html">Concerts</a></li>
+								<li><a  href="Spectacle.html">Spectacles</a></li>
+								<li><a  href="expo.html">Expositions</a></li>
+								<li><form id="contact" action="contact.html" method="get"><button class="bn">Nous Contacter</button></form></li>
+						</ul>
+					</div>
+                </nav>
+            </div>
+        </header>
+        <script>
+        	window.addEventListener("scroll", function(){
+        		var nav = document.querySelector("header");
+        		nav.classList.toggle("sticky", window.scrollY > 0)
+        	})
+        </script>
+		<h3>Concerts</h3>
+		<div class="evenement">
+			<div class="evenement_1">
+				<img class="concert" src="img/Clara.jpg" alt="img_concert">
+				<div class ="texte">
+					<p>Clara Luciani - Respire Encore Tour</p>
+					<p>Dans la foulée du succès de son album "Coeur", Clara Luciani parcourt les Zéniths et Arenas de France 
+					jusqu'en 2023 avec son "Respire Encore Tour". Un live aux ambiance disco à ne pas manquer !</p>
+					<p>08/12/2022 – 31/01/2023  |  12 Événements</p>
+				</div>
+			</div>
+		
+			<div class="evenement_2">
+				<img class="concert" src="img/damso.jpg" alt="img_concert">
+				<div class ="texte">
+					<p>Damso - QALF Tour</p>
+					<p>Damso a été l’artiste le plus écouté au monde sur Spotify le jour de la sortie de son album QALF. Damso 
+					présentera cet album en tournée, fin 2022</p>
+					<p>23/11/2022 – 03/12/2022  |  4 Événements</p>
+				</div>
+			</div>
+		
+			<div class="evenement_3">
+				<img class="concert" src="img/stromae.jpg" alt="img_concert">
+				<div class ="texte">
+						<p>Stromae - Multitude Tour</p>
+						<p>Après trois concerts exceptionnels « avant-premières » en février 2022 acclamés par le public 
+						et la critique, retrouvez-le en tournée dans toute la France avec le Multitude Tour</p>
+						<p>04/03/2023 – 02/12/2023  |  30 Événements</p>
+				</div>
+			</div>
+			
+			<div class="evenement_4">
+				<img class="concert" src="img/angèle.jpg" alt="img_concert">
+				<div class ="texte">
+					<p>Angèle - Nonante-Cinq Tour</p>
+					<p>Retrouvez Angèle en concert dans toute la France et dans sa ville de cœur, Bruxelles, dans le 
+					cadre de son Nonante-Cinq Tour. La perle belge vous prépare un show bourré d'énergie et de sincérité.</p>
+					<p>22/11/2022 – 22/12/2022  |  9 Événements</p>
+				</div>
+			</div>
+			
+		</div>
+		<img class="back" src="img/stacked-waves-haikei.svg" alt="fond">
+    
+	<footer class="footer-div">
+	
+		<div class="contenu-footer">
+		
+			<div class="bloc footer-propos">
+				<h1>À propos</h1>
+				<ul class="liste-propos">
+					<li><a href ="index.html">Qui sommes-nous ?</a></li>
+					<li><a href ="concert.html">Concert</a></li>
+					<li><a href ="Spectacle.html">Spectacle</a></li>
+					<li><a href ="expo.html">Exposition</a></li>
+					<li><a href ="Rapport.pdf">Notre Rapport</a></li>
+				</ul>
+			</div>
+			
+			<div class="bloc footer-engagements">
+				<h1>Nos engagements</h1>
+					<p>Vente et échange sécurisés</p>
+					<p>Contact 7j/7</p>
+					<p>Service client d'exception</p>
+			</div>
+			
+			<div class="bloc footer-suiveznous">
+				<h1>Suivez-nous</h1>
+				<p><img src="facebook.png" alt="facebook">  Facebook</p>
+				<p><img src="twitter.png" alt="twitter">  Twitter</p>
+				<p><img src="pinterest.png" alt="pinterest">  Pinterest</p>
+				<p><img src="instagram.png" alt="instagram">  Instagram</p>
+				<p><img src="youtube.png" alt="youtube">  Youtube</p>
+			</div>
+			
+			<div class="bloc footer-nouscontacter">
+				<h1>Nous contacter</h1>
+					<p>IUT d'Orsay, 91190 Gif-sur-Yvette</p>
+					<p>📧 eventip.ga@gmail.com</p>
+					<p>📞 07 68 56 92 68 </p>
+			</div>
+			
+			
+			
+		</div>
+	
+	</footer>
+	
+	</body>
+	
+</html>

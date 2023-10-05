@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" href="img/icon.png"> 
+        <title>Eventip</title>
+
+		
+    </head>
+    <body>
+        <header>
+        
+            <div id="nav">
+                <nav>
+					<div id="conteneur-nav">
+						<ul>
+								<li id="logo"><a  href ="index.html"> <img class="logo" src="img/logo2.png" alt="Logo" ></a></li>
+								<li><a  href="index.html">Accueil</a></li>
+								<li><a  href="concert.html">Concerts</a></li>
+								<li><a  href="Spectacle.html">Spectacles</a></li>
+								<li><a  href="expo.html">Expositions</a></li>
+								<li><form id="contact" action="contact.html" method="get"><button class="bn">Nous Contacter</button></form></li>
+						</ul>
+					</div>
+                </nav>
+            </div>
+        </header>
+        <script>
+        	window.addEventListener("scroll", function(){
+        		var nav = document.querySelector("header");
+        		nav.classList.toggle("sticky", window.scrollY > 0)
+        	})
+        </script>
+		<h3>Expositions</h3>
+		<div class="evenement">
+			<div class="evenement_1">
+				<img class="concert" src="img/secret.jpg" alt="img_concert">
+				<div class ="texte">
+					<p>Exposition Top Secret - Cinéma et Espionnage</p>
+					<p>La Cinémathèque française nous offre une plongée excitante dans cet univers intrigant, 
+					avec sa nouvelle exposition exceptionnelle : Top secret, cinéma & espionnage.</p>
+					<p>23/11/2022 – 02/01/2023</p>
+				</div>
+			</div>
+		
+			<div class="evenement_2">
+				<img class="concert" src="img/lumière.jpg" alt="img_concert">
+				<div class ="texte">
+					<p>Lumières en Seine - Billet Daté</p>
+					<p>Pour sa deuxième édition, Lumières en Seine vous offre une soirée exceptionnelle et spectaculaire dans un 
+					cadre enchanteur tout au long d’un parcours éclairé et revisité</p>
+					<p>23/11/2022 – 08/01/2023  |  684 Événements</p>
+				</div>
+			</div>
+		
+			<div class="evenement_3">
+				<img class="concert" src="img/sentiers.jpg" alt="img_concert">
+				<div class ="texte">
+					<p>Les Sentiers Lumineux de Noël - Billet Journée</p>
+					<p>24/11/2022 – 02/01/2023  |  33 Événements</p>
+				</div>
+			</div>
+			
+			<div class="evenement_4">
+				<img class="concert" src="img/cité.jpg" alt="img_concert">
+				<div class ="texte">
+					<p>Cité des Enfants 2-7 ans</p>
+					<p>La Cité des enfants des 2/7 ans propose des activités ludiques et éducatives dans cinq espaces : Je me découvre, 
+					Je sais faire, Je me repère, Tous ensemble, J'expérimente.</p>
+					<p>22/11/2022 – 31/12/2022  |  147 Événements</p>
+				</div>
+			</div>
+			
+		</div>
+		<img class="back" src="img/stacked-waves-haikei.svg" alt="fond">
+    
+		<footer class="footer-div">
+	
+			<div class="contenu-footer">
+			
+				<div class="bloc footer-propos">
+					<h1>À propos</h1>
+					<ul class="liste-propos">
+						<li><a href ="index.html">Qui sommes-nous ?</a></li>
+						<li><a href ="concert.html">Concert</a></li>
+						<li><a href ="Spectacle.html">Spectacle</a></li>
+						<li><a href ="expo.html">Exposition</a></li>
+						<li><a href ="Rapport.pdf">Notre Rapport</a></li>
+					</ul>
+				</div>
+				
+				<div class="bloc footer-engagements">
+					<h1>Nos engagements</h1>
+						<p>Vente et échange sécurisés</p>
+						<p>Contact 7j/7</p>
+						<p>Service client d'exception</p>
+				</div>
+				
+				<div class="bloc footer-suiveznous">
+					<h1>Suivez-nous</h1>
+					<p><img src="facebook.png" alt="facebook">  Facebook</p>
+					<p><img src="twitter.png" alt="twitter">  Twitter</p>
+					<p><img src="pinterest.png" alt="pinterest">  Pinterest</p>
+					<p><img src="instagram.png" alt="instagram">  Instagram</p>
+					<p><img src="youtube.png" alt="youtube">  Youtube</p>
+				</div>
+				
+				<div class="bloc footer-nouscontacter">
+					<h1>Nous contacter</h1>
+						<p>IUT d'Orsay, 91190 Gif-sur-Yvette</p>
+						<p>📧 eventip.ga@gmail.com</p>
+						<p>📞 07 68 56 92 68 </p>
+				</div>
+				
+				
+				
+			</div>
+		
+		</footer>
+	
+	</body>
+	
+	
+</html>

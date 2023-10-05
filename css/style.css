@@ -1,0 +1,15 @@
+@import 'desktop.css'(min-width:1210px);
+@import 'responsive1.css'(max-width:1210px)and (min-width:915px);
+@import 'responsive2.css'(max-width:914px) and (min-width:781px);
+@import 'responsive3.css'(max-width:780px) and (min-width:630px);
+@import 'responsive4.css'(max-width:629px) and (min-width:481px);
+@import 'responsive5.css' (max-width:480px);
+
+@font-face{
+	font-family: "Tango Sans";
+	src: url("fonts/TangoSans.ttf") format("truetype");
+}
+
+
+
+
